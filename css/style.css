@@ -1,0 +1,680 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 75%;
+}
+
+:root {
+    --main-color: #f25454;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.home {
+    background-image: url(../images/slideshow-1.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: slider 6s 0s infinite alternate;
+
+    .caption {
+        h1 {
+
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+    }
+}
+
+ .home::after {
+    content: '';
+     position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 300px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+    animation: typing 6s 0s infinite alternate;
+    color: white; 
+   
+
+} 
+
+
+
+@keyframes typing {
+    0% {
+        content: "We build great brands.";   
+    }
+
+    25% {
+        
+        content: "We build great brands.";
+    }
+
+    50% {
+       
+        content: "Advanced in digital works.";
+    }
+
+    75% {
+       
+        content: "Advanced in digital works.";
+    }
+
+    100% {
+        
+        content: "Focused on strategy.";
+    }
+
+}
+@keyframes slider {
+    0% {
+        
+        background-image: url(../images/slideshow-1.jpg);
+        
+        
+    }
+
+    25% {
+        background-image: url(../images/slideshow-1.jpg);
+        
+    }
+
+    50% {
+        background-image: url(../images/slideshow-2.jpg);
+       
+    }
+
+    75% {
+        background-image: url(../images/slideshow-2.jpg);
+       
+    }
+
+    100% {
+        background-image: url(../images/slideshow-3.jpg);
+        
+    }
+
+}
+
+.nav-link {
+    color: black;
+
+}
+
+.nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--main-color);
+}
+
+.settings {
+    position: fixed;
+    z-index: 999999;
+    width: 40px;
+    height: 40px;
+    background-color: #1f2528;
+    top: 150px;
+
+    i {
+        color: white;
+    }
+}
+
+.arwo1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    top: 350px;
+    left: -4px;
+    transition: all 1s;
+    border-radius: 3px !important;
+
+    i {
+        color: white;
+        font-size: large;
+        z-index: 5;
+    }
+
+}
+
+ 
+
+
+
+
+ .arwo2 { 
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    top: 400px;
+    left: -4px;
+    transition: all 1s;
+
+    i {
+        color: white;
+        font-size: large;
+        z-index: 5;
+    }
+} 
+.arwo1-layer{
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: all 0.5s;
+}
+.arwo2-layer{
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: all 0.5s;
+}
+.arwo1:hover .arwo1-layer{
+ left: 0;
+}
+.arwo2:hover .arwo2-layer{
+ left: 0;
+}
+.arwo1:hover {
+    i {
+        color: var(--main-color);
+    }
+}
+.arwo2:hover {
+    i {
+        color: var(--main-color);
+    }
+}
+
+
+.spin {
+    width: 28px;
+    height: 45px;
+    border: 1.5px solid white;
+    position: relative;
+}
+
+.spin::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: move 1s infinite;
+}
+
+@keyframes move {
+    0% {
+        top: 10px;
+    }
+
+    100% {
+        top: 50%;
+        opacity: 0.9;
+    }
+
+}
+.paragraph{
+    width: 75%;
+    margin: auto;
+}
+
+
+/* about */
+
+.about-p {
+
+    h2 {
+        position: relative;
+        transform: scale(1.3);
+        z-index: 35;
+
+    }
+
+    h3 {
+        transform: scale(2.5);
+        font-weight: bolder;
+        color: #f2f2f2;
+        position: absolute;
+        left: -78px;
+        bottom: 10px;
+    }
+
+    h2::after {
+        content: "";
+        position: absolute;
+        width: 25%;
+        height: 1px;
+        bottom: -20px;
+        left: 50px;
+        background-color: black;
+        transition: all 0.5s;
+    }
+
+
+
+}
+
+.about-p:hover h2::after {
+    width: 30%;
+}
+
+.about {
+    .about-pp {
+        max-width: 650px;
+        top: 180px;
+        left: 420px;
+    }
+
+    .h51 {
+        left: 250px;
+    }
+
+    .h52 {
+        left: 305px;
+    }
+
+    .h53 {
+        left: 240px;
+    }
+
+    .h54 {
+        left: 185px;
+    }
+
+    .progress-bar {
+        background-color: var(--main-color);
+    }
+}
+
+/* team */
+
+.team-p {
+
+    h2 {
+        position: relative;
+        transform: scale(1.3);
+        z-index: 35;
+
+    }
+
+    h3 {
+        transform: scale(2.5);
+        font-weight: bolder;
+        color: #f2f2f2;
+        position: absolute;
+        left: 545px;
+        bottom: 15px;
+    }
+
+    h2::after {
+        content: "";
+        position: absolute;
+        width: 25%;
+        height: 1px;
+        bottom: -20px;
+        left: 50px;
+        background-color: black;
+        transition: all 0.5s;
+    }
+
+
+
+}
+
+.team-p:hover h2::after {
+    width: 30%;
+}
+
+.team {
+    img {
+        border-radius: 3px;
+    }
+
+    .btn {
+        right: 50px;
+        padding: 0px 25px;
+        border-radius: 3px;
+        background-color: var(--main-color);
+        color: white;
+        opacity: 1;
+        transition: all 0.5s;
+
+    }
+}
+.team-image{
+    overflow: hidden;
+    
+   
+}
+
+
+
+.team-layer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f25454d9;
+    opacity: 0;
+    z-index: 800;
+    transition: all 0.5s;
+
+}
+
+.team-image img{
+    transition: all 1s;
+}
+.team-image:hover img{
+    transform: scale(1.2);
+}
+.team-image:hover .team-layer {
+    opacity: 0.8;
+    
+}
+   
+.team .btn:hover {
+    opacity: 0.5;
+}
+.first {
+    h5{
+        transition: all 0.5s;
+    }
+}
+.first:hover h5{
+    color: var(--main-color);
+}
+
+/* services */
+.service-p {
+
+    h2 {
+        position: relative;
+        transform: scale(1.3);
+        z-index: 35;
+
+    }
+
+    h3 {
+        transform: scale(2.5);
+        font-weight: bolder;
+        color: #f2f2f2;
+        position: absolute;
+        left: 537px;
+        bottom: 10px;
+    }
+
+    h2::after {
+        content: "";
+        position: absolute;
+        width: 25%;
+        height: 1px;
+        bottom: -20px;
+        left: 50px;
+        background-color: black;
+        transition: all 0.5s;
+    }
+}
+.service-p:hover h2::after {
+    width: 30%;
+}
+.service {
+    background-color: #fafafa;
+}
+
+.service-item {
+
+    h5 {
+        transition: all 0.5s;
+    }
+
+    i {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 3px;
+        left: -30px;
+        color: var(--main-color);
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+}
+
+.service-item h5:hover {
+    color: var(--main-color);
+}
+
+/* client */
+.client-p {
+
+    h2 {
+        position: relative;
+        transform: scale(1.3);
+        z-index: 35;
+
+    }
+
+    h3 {
+        transform: scale(2.8);
+        font-weight: bolder;
+        color: #f2f2f2;
+        position: absolute;
+        left: 515px;
+        bottom: 10px;
+    }
+
+    h2::after {
+        content: "";
+        position: absolute;
+        width: 28%;
+        height: 1px;
+        bottom: -20px;
+        left: 80px;
+        background-color: black;
+        transition: all 0.5s;
+    }
+}
+
+.client-p:hover h2::after {
+    width: 35%;
+}
+.carousel{
+    width: 75%;
+    margin: auto;
+
+}
+
+
+/* contact */
+.contact-p {
+
+    h2 {
+        position: relative;
+        transform: scale(1.7);
+        z-index: 35;
+
+    }
+
+    h3 {
+        transform: scale(2.8);
+        font-weight: bolder;
+        color: #f2f2f2;
+        position: absolute;
+        left: 515px;
+        bottom: 13px;
+    }
+
+    h2::after {
+        content: "";
+        position: absolute;
+        width: 28%;
+        height: 1px;
+        bottom: -20px;
+        left: 80px;
+        background-color: black;
+        transition: all 1s;
+    }
+}
+
+.contact-p:hover h2::after {
+    width: 35%;
+}
+
+
+.contact {
+    background-color: #fafafa;
+
+    i {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 5px;
+        left: -37px;
+        color: var(--main-color);
+        font-size: 30px;
+    }
+
+    .form-inbut {
+        height: 50px;
+        border-radius: none;
+        width: 100%;
+        border: 2.3px solid #eeeeee;
+
+
+    }
+
+    .btn {
+        background-color: var(--main-color);
+        border: none;
+        padding: 13px 30px;
+        border-radius: 3px;
+        color: white;
+        opacity: 1;
+        transition: all 0.5;
+
+    }
+
+    h4 {
+        transition: all 0.5s;
+    }
+
+    a {
+        transition: all 0.5s;
+        color: #979a9c;
+    }
+}
+
+.form-inbut:focus {
+    outline-color: var(--main-color);
+}
+
+.contact .btn:hover {
+    opacity: 0.5;
+}
+
+.contact h4:hover,
+.contact a:hover {
+    color: var(--main-color);
+}
+
+/* footer */
+.footer {
+
+    background-image: url(../images/dotted-map.png);
+    background-size: contain;
+    background-position: center;
+    background-color: #222222;
+
+    .footer-logo {
+        left: 730px;
+        top: 70px;
+    }
+
+    .footer-sm-div {
+        width: 50px;
+        height: 50px;
+        background-color: var(--main-color);
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+
+    p {
+        color: #a2a7a7;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: #a2a7a7;
+        padding: 3px 0px;
+        transition: all 0.5s;
+    }
+
+    .btn {
+        padding: 2.5px 3.5px;
+        border: 1px solid #a2a7a7;
+
+    }
+
+    h5 {
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+
+}
+
+.footer .btn:hover {
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.footer a:hover {
+    color: var(--main-color);
+}
+
+.end-footer {
+    background-color: #1a1a1a;
+
+    p {
+        color: #a2a7a7;
+    }
+
+    span {
+        transition: all 0.5s;
+        color: white;
+    }
+
+    i {
+        transition: all 0.5s;
+    }
+
+}
+
+.footer- span:hover {
+    color: var(--main-color);
+}
+
+.footer-icons i:hover {
+    color: var(--main-color);
+}

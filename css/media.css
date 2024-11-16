@@ -1,0 +1,298 @@
+/* sm */
+@media (min-width: 0px) and (max-width :767px) {
+    .home::after {
+        left: 15%;
+        font-size: 40px;
+    }
+
+    .about-p {
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            left: -60px;
+        }
+
+    }
+
+    .about .about-pp {
+        top: 180px;
+        left: 0;
+    }
+
+    .about {
+        .h51 {
+            left: 180%;
+        }
+
+        .h52 {
+            left: 190%;
+        }
+
+        .h53 {
+            left: 110%;
+        }
+
+        .h54 {
+            left: 90%;
+        }
+    }
+
+    .paragraph {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .team-p {
+        h3 {
+            left: 180px;
+            font-size: 33px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .container {
+        width: 99%;
+    }
+
+    .team .btn {
+        right: 115px;
+        padding: 5px 25px;
+    }
+
+    .team {
+        .team-ask {
+            position: relative;
+            left: 0px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .service-p {
+        h3 {
+            left: 140px;
+            font-size: 33px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .po {
+        width: 100%;
+    }
+
+    .client-p {
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 32px;
+            left: 130px;
+        }
+    }
+
+    .contact-p {
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 32px;
+            left: 135px;
+        }
+
+        h2::after {
+            left: 40px;
+        }
+    }
+
+    .contact {
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    .nav-item i {
+        display: none;
+    }
+    .carousel {
+        width: 100%;
+    }
+    
+    .footer .footer-logo {
+        left: 160px;
+    }
+
+}
+
+
+
+/* md */
+@media (min-width: 768px) and (max-width:1024px) {
+    .container {
+        width: 99%;
+    }
+
+    .paragraph {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .nav-item i {
+        display: none;
+    }
+
+    .about .about-pp {
+        left: 100px;
+        width: 70%;
+    }
+
+    .about {
+        .h51 {
+            left: 450px;
+        }
+
+        .h52 {
+            left: 520px;
+        }
+
+        .h53 {
+            left: 440px;
+        }
+
+        .h54 {
+            left: 320px;
+        }
+    }
+
+    .team-p {
+        h3 {
+            left: 350px;
+
+        }
+
+
+    }
+
+    .service-p {
+        h3 {
+            left: 330px;
+            font-size: 33px;
+        }
+
+        h2 {
+            font-size: 33px;
+        }
+
+    }
+
+    .client-p {
+
+
+        h3 {
+
+            left: 340px;
+        }
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .contact-p {
+        h2 {
+            font-size: 33px;
+        }
+
+        h3 {
+            left: 340px;
+        }
+
+        h2::after {
+            left: 40px;
+        }
+    }
+
+    .contact {
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    .footer .footer-logo {
+
+        left: 45%;
+
+
+    }
+
+}
+
+/* lg */
+@media (min-width: 1024px) and (max-width:1280px) {
+    .about .about-pp {
+        left: 24%;
+        width: 100%;
+
+    }
+
+    .about {
+        .h51 {
+            left: 200px;
+        }
+
+        .h52 {
+            left: 250px;
+        }
+
+        .h53 {
+            left: 195px;
+        }
+
+        .h54 {
+            left: 160px;
+        }
+    }
+
+    .team-p {
+        h3 {
+            left: 450px;
+
+        }
+    }
+
+    .service-p {
+        h3 {
+            left: 430px;
+
+        }
+
+    }
+    .client-p {
+        h3 {
+            left: 420px;
+        }
+    }
+    .contact {
+        h3 {
+            left: 420px;
+        }
+    }
+    .footer .footer-logo {
+        left: 47%;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) and (max-width:1536px) {}
+
+/* xxl */
+@media (min-width: 1536px) {}
